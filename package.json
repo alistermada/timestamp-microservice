@@ -4,6 +4,7 @@
   "description": "Checks if URL parameter is a valid date or UNIX timestamp",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Alister Najib Mada",
