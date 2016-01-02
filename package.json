@@ -1,0 +1,15 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "Checks if URL parameter is a valid date or UNIX timestamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alister Najib Mada",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "moment": "^2.10.6"
+  }
+}
