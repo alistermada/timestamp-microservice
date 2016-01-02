@@ -1,5 +1,6 @@
 var express = require('express');
 var moment = require('moment');
+var port = process.env.PORT || 3000;
 var app = express();
 
 app.get('/', function(req, res) {
@@ -19,5 +20,5 @@ app.get('/:input', function(req, res) {
 });
 
 app.listen(3000, function() {
-  console.log('Listening on port 3000...');
+  console.log('Listening on port ' + port + '...');
 });
