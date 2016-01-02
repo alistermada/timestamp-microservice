@@ -21,5 +21,5 @@ app.get('/:input', function(req, res) {
 });
 
 app.listen(app.get('port'), function() {
-  console.log('Listening on port ' + port + '...');
+  console.log('Listening on port ' + app.get('port') + '...');
 });
