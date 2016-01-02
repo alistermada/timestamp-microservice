@@ -1,7 +1,8 @@
 var express = require('express');
 var moment = require('moment');
-var port = process.env.PORT || 3000;
 var app = express();
+
+app.set('port', (process.env.PORT || 5000));
 
 app.get('/', function(req, res) {
   res.sendFile(__dirname + '/index.html');
@@ -19,6 +20,6 @@ app.get('/:input', function(req, res) {
   res.send(timestamp);
 });
 
-app.listen(3000, function() {
+app.listen(app.get('port'), function() {
   console.log('Listening on port ' + port + '...');
 });
